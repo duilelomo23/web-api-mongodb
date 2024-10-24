@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員系統</title>
+</head>
+<body>
+    <h1>會員系統首頁</h1>    
+    <p>內文</p>
+    <div>歡迎光臨我的網站</div>
+    
+    <h3>會員登入</h3>
+    <form action='/signin' method='POST'>
+        信箱 <input type="text" name="email" /><br/>
+        密碼 <input type="password" name="password" /><br/>
+        <button>登入</button>
+    </form>
+
+    <form action='/new_member'> 
+        <button>註冊帳號</button>            
+    </form>
+
+</body>
+</html>

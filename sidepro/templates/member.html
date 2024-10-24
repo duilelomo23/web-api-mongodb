@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員頁面</title>
+</head>
+<body>
+    <h2>會員頁面 {{ message }} 你好</h2>
+
+    <div><a href='/add_html'>添加好友</a></div>
+
+    <h3>我的好友列表</h3>
+    <ul>
+        {% if friends %}
+            {% for friend in friends %}
+                <li>{{ friend }}</li>
+            {% endfor %}
+        {% else %}
+            <li>你還沒有好友</li>
+        {% endif %}
+    </ul>
+
+    <img src="/openai.png" width="300" alt="Description"/>
+
+    <form action='/updata_html' method='POST'>   
+        <button>修改暱稱或密碼</button>
+    </form>
+    
+    <div><a href='/signout'>登出</a></div>
+</body>
+</html>

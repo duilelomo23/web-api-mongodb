@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更新暱稱或密碼</title>
+</head>
+<body>
+    <h1>更改暱稱</h1>
+    <form action='/updata_name' method='POST'>    
+        <label for='new_nickname'>修改的暱稱</label> 
+        <input type="text" name="new_nickname" id='new_nickname'/><br/>
+        <button type="submit">確認修改暱稱</button>
+    </form>
+
+    
+    <h1>更改密碼</h1>
+    <form action='/updata_password' method='POST'>     
+        <label for="'email">請輸入郵箱:</label>   
+        <input type="text" name="email" id="email"/><br/>
+        <label for="password">請輸入修改密碼:</label>
+        <input type="password" name="password" id="password"/><br/>
+        <button type="'submit">確認修改密碼</button>
+    </form>
+    <div><a href='/member'>回到會員頁面</a></div>
+
+
+    <script src='script.js'></script></script>
+</body>
+</html>
